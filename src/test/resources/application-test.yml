@@ -1,0 +1,2 @@
+# WireMock stub server.
+proxy.api.main.uri: http://127.0.0.1:8080

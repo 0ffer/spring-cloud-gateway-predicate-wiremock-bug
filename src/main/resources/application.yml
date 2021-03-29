@@ -1,0 +1,15 @@
+proxy.api.main.uri:
+
+spring:
+  application:
+    name: simple app for reproduce bug with cloud gateway and wiremock
+  cloud:
+    gateway:
+      routes:
+        - id: qwerty123
+          uri: ${proxy.api.main.uri}
+          predicates:
+            - WithSpecificBodyProperties=FavouriteShopId,IdEntryPoint
+
+logging.level:
+  root: DEBUG

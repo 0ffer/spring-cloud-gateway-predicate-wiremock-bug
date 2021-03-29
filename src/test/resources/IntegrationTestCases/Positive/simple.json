@@ -1,0 +1,30 @@
+{
+  "externalSystemRequest": {
+    "url": "/api/example",
+    "method": "PUT",
+    "queryParams": {},
+    "headers": {},
+    "body": "{\n  \"FavouriteShopId\": 321,\n  \"IdEntryPoint\": 10060005\n}"
+  },
+  "externalSystemResponse": {
+    "statusCode": 200,
+    "body": "{\n  \"Result\": {\n    \"Code\": 1,\n    \"Text\": null\n  }\n}"
+  },
+
+  "internalSystemRequest": {
+    "urlPath": "/api/example",
+    "method": "PUT",
+    "headers": {},
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\n  \"FavouriteShopId\": 321,\n  \"IdEntryPoint\": 10060005\n}"
+      }
+    ]
+  },
+  "internalSystemResponse": {
+    "status": 200,
+    "headers": {},
+    "body": "{\n  \"Result\": {\n    \"Code\": 1,\n    \"Text\": null\n  }\n}"
+  }
+  
+}
